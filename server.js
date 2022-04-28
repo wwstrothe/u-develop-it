@@ -21,7 +21,6 @@ const db = mysql.createConnection(
   console.log('Connected to the election database')
 );
 
-
 // GET all candidates with party affiliation
 app.get('/api/candidates', (req, res) => {
   const sql = `SELECT candidates.*, parties.name 
